@@ -53,3 +53,59 @@ let laranja = [
 ]
 
 console.table(laranja)
+
+//metodo de string
+
+const fullName = 'JoséXLucasXdosXSantosXSoares'
+
+console.log(fullName, 'nome completo')
+
+const stringToArray = fullName.split('X')
+console.table(stringToArray)
+
+const firstName = stringToArray[0]
+
+const lastName = stringToArray[3]
+
+const userName = `Bem vindo, ${firstName} ${lastName}`
+console.log(userName)
+
+console.log(fullName.toLowerCase())
+
+console.log(fullName.toUpperCase())
+
+console.log(fullName.length)
+
+console.log(fullName.indexOf())
+
+console.log(fullname.indexOf ('Santos'))
+
+//teste slice
+
+console.log(fullname.slice(14, 21))
+
+// métodos de array
+//push
+
+const list = ['a', 'b', 'c', 'd', 'e']
+
+console.log(list.length, 'array')
+console.log(list[4])
+
+list [5] = 'f'
+console.log(list)
+
+//push chama mais pro final
+
+list.push('g')
+console.log(list, 'push')
+
+//
+
+console.log(list[list.length -1], 'aqui')
+
+//pop tirar o ultimo
+
+list.pop()
+console.log(list)
+
