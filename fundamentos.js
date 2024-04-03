@@ -78,11 +78,11 @@ console.log(fullName.length)
 
 console.log(fullName.indexOf())
 
-console.log(fullname.indexOf ('Santos'))
+console.log(fullName.indexOf ('Santos'))
 
 //teste slice
 
-console.log(fullname.slice(14, 21))
+console.log(fullName.slice(14, 21))
 
 // métodos de array
 //push
@@ -108,4 +108,62 @@ console.log(list[list.length -1], 'aqui')
 
 list.pop()
 console.log(list)
+
+// objetos
+
+const product = {
+  name: 'Regata', 
+  price: 49.99,
+  inStock: true,
+  sizes: ['P', 'M', 'G', 'GG']
+}
+console.log(product.name)
+console.log(product.price)
+console.log(product.inStock)
+console.log(product.sizes)
+
+
+//destructing
+const{inStock, price} = product
+console.log(price)
+console.log(inStock)
+
+//JSON
+const dog ={
+  name:'monstrão',
+  age: 5,
+  bread: "caramelo"
+}
+
+const jsonSt = JSON.stringify(dog)
+const jsonReset = JSON.parse(jsonSt)
+
+console.log(jsonSt)
+console.log(jsonReset)
+
+const caqui = 10.94834834
+console.log(caqui.toFixed)
+
+const data = new Date
+console.log(data)
+
+const a = 10
+const b = 15
+
+const soma = a + b
+const sub = a - b
+const multi = a * b
+const div = a/b
+const res = a%b
+
+console.log(soma, sub, multi, div, res, 'ari')
+
+soma == 10? console.log('aprovado') : console.log('Reprovada')
+
+if(soma > 10){
+  console.log('Aprovado')
+}
+else{
+  console.log('Reprovado')
+}
 
